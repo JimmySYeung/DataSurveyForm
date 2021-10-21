@@ -5,7 +5,9 @@
     <title>Verification
     </title>
     <!-- Bootstrap -->
-    <meta charset="utf-8">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -29,7 +31,7 @@
 	<div class="row"><b>Address:</b> <?php echo $_POST["address"]; ?></div><br>
 	<div class="row"><b>Education Status:</b> <?php echo $_POST["education"]; ?></div><br>
 	<div class="row"><b>Monthly budget:</b> <?php echo $_POST["income"]; ?></div><br>
-    <div class="row"><b>Height:</b> <?php echo $_POST["feet"]; ?>, <?php echo $_POST["inches"]; ?></div><br>
+    <div class="row"><b>Height:</b> <?php echo $_POST["feet"]; ?> ft, <?php echo $_POST["inches"]; in.?></div><br>
 	<div class="row"><b>Phone:</b> <?php echo $_POST["phone"]; ?></div><br>
 	<div class="row"><b>E-mail:</b> <?php echo $_POST["email"]; ?></div><br>
 

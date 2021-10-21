@@ -126,24 +126,7 @@
                                 </div>
                             </div>
                         </div>
-                        
                         <br>
-                        <div class="row">
-                            <div class="wrapper">
-                                <div class="form-group col-md-6 has-feedback">
-                                    <label for="password">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password" pattern="[a-zA-Z0-9]+" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="wrapper">
-                                <div class="form-group col-md-6">
-                                    <label for="passwordConfirmation">Confirm Password</label>
-                                    <input type="password" class="form-control" id="passwordConfirmation" name="passwordConfirmation">
-                                </div>
-                            </div>
-                        </div>
                         <br>
                         <div class="form-group">
                             <div class="wrapper2">
@@ -168,7 +151,7 @@
                             <button type="reset" class="btn btn-default" style="float: left;">CANCEL</button>
                         </div>
                         <h5>
-                                        <a href="FormAux.html" target="_blank" style="float: right;">       Forgot your password?</a>
+                                        <a href="FormAux.html" target="_blank" style="float: right;"></a>
                                       </h5>
                     </form>
                 </div>
@@ -249,24 +232,6 @@
                         },
                         emailAddress: {
                             message: 'Please enter a valid email address.'
-                        }
-                    }
-                },
-                password: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Please type in a password.'
-                        }
-                    }
-                },
-                passwordConfirmation: {
-                    validators: {
-                        notEmpty: {
-                            message: 'Make sure the passwords are identical.'
-                        },
-                        identical: {
-                            field: 'password',
-                            message: 'Please re-type your password.'
                         }
                     }
                 },

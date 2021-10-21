@@ -32,7 +32,6 @@
     <div class="row"><b>Height:</b> <?php echo $_POST["feet"]; ?>, <?php echo $_POST["inches"]; ?></div><br>
 	<div class="row"><b>Phone:</b> <?php echo $_POST["phone"]; ?></div><br>
 	<div class="row"><b>E-mail:</b> <?php echo $_POST["email"]; ?></div><br>
-	<div class="row"><b>Password:</b> <?php echo $_POST["password"]; ?></div></div>
 
 <div id="gmap_canvas">Loading map...</div>
 		</div>

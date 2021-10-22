@@ -30,7 +30,7 @@
                     <br>I will be updating the survey website. Here are my projects:</center>
                 <br>My gitHub: <a href="https://github.com/JimmySYeung">https://github.com/JimmySYeung</a>
                 <br>
-                <br>My webform for my UI/UX class: <a href="CSC642DataSurveyForm.html" target="_blank">CSC 642 Data Survey Form</a>
+                <br>My webform for my UI/UX class: <a href="CSC642DataSurveyForm.php" target="_blank">CSC 642 Data Survey Form</a>
                 <br>
                 <br>
                 <center><i>Thank you kindly for your patience.</i>

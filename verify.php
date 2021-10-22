@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html>
+<?php
+    $firstName=$_POST["firstName"];
+    $lastName=$_POST["lastName"];
+    $email=$_POST["email"];
+    $address=$_POST["address"];
+    $education=$_POST["education"];
+    $income=$_POST["income"];
+    $feet=$_POST["feet"];
+    $phone=$_POST["phone"];
+    //header("Location: index.html");
+?>
     <head>
 
         <title>Filled information</title>
@@ -30,7 +41,7 @@
 	<div class="row"><b>Address:</b> <?php echo $address ?></div><br>
 	<div class="row"><b>Education Status:</b> <?php echo $education ?></div><br>
 	<div class="row"><b>Monthly budget:</b> <?php echo $income; ?></div><br>
-    <div class="row"><b>Height:</b> <?php echo $feet ?> ft, <?php echo $inches in.?></div><br>
+    <div class="row"><b>Height:</b> <?php echo $feet ?> ft, <?php echo $inches ?> in.</div><br>
 	<div class="row"><b>Phone:</b> <?php echo $phone ?></div><br>
 	<div class="row"><b>E-mail:</b> <?php echo $email ?></div><br>
 

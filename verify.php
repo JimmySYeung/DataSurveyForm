@@ -22,16 +22,16 @@
 <div class="container center-div">
     <div class="container jumbotron jumbotron-fluid" id="main-container">
         <div class="container center-div">
-	<h2>Hello <?php echo $_HEAD["firstName"]; ?>,</h2><h3> here is the information you have entered: </h3><br>
+	<h2>Hello <?php echo $_POST["firstName"]; ?>,</h2><h3> here is the information you have entered: </h3><br>
 	<div class="row">
 		<div class="col-md-5">
-	<div class="row"><b>Full Name:</b> <?php echo $_HEAD["firstName"]; ?> <?php echo $_HEAD["lastName"]; ?></div><br>
-	<div class="row"><b>Address:</b> <?php echo $_HEAD["address"]; ?></div><br>
-	<div class="row"><b>Education Status:</b> <?php echo $_HEAD["education"]; ?></div><br>
-	<div class="row"><b>Monthly budget:</b> <?php echo $_HEAD["income"]; ?></div><br>
-    <div class="row"><b>Height:</b> <?php echo $_HEAD["feet"]; ?> ft, <?php echo $_HEAD["inches"]; in.?></div><br>
-	<div class="row"><b>Phone:</b> <?php echo $_HEAD["phone"]; ?></div><br>
-	<div class="row"><b>E-mail:</b> <?php echo $_HEAD["email"]; ?></div><br>
+	<div class="row"><b>Full Name:</b> <?php echo $_POST["firstName"]; ?> <?php echo $_POST["lastName"]; ?></div><br>
+	<div class="row"><b>Address:</b> <?php echo $_POST["address"]; ?></div><br>
+	<div class="row"><b>Education Status:</b> <?php echo $_POST["education"]; ?></div><br>
+	<div class="row"><b>Monthly budget:</b> <?php echo $_POST["income"]; ?></div><br>
+    <div class="row"><b>Height:</b> <?php echo $_POST["feet"]; ?> ft, <?php echo $_POST["inches"]; in.?></div><br>
+	<div class="row"><b>Phone:</b> <?php echo $_POST["phone"]; ?></div><br>
+	<div class="row"><b>E-mail:</b> <?php echo $_POST["email"]; ?></div><br>
 
 <div id="gmap_canvas">Loading map...</div>
 		</div>
@@ -90,10 +90,10 @@ function geocode($address){
 ?>
 </body>
 <?php
-if($_HEAD){
+if($_POST){
  
     // get latitude, longitude and formatted address
-    $data_arr = geocode($_HEAD['address']);
+    $data_arr = geocode($_POST['address']);
  
     // if able to geocode the address
     if($data_arr){

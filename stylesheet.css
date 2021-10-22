@@ -2,7 +2,7 @@ body {
     background: linear-gradient(to bottom right, white, white);
     font-family: 'Nunito', sans-serif;
     font-size: 17px;
-    border: 12px solid cornsilk;
+    border: 12px solid white;
 }
 
 #map {

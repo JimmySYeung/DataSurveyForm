@@ -23,17 +23,14 @@
         <div class="container jumbotron jumbotron-fluid" id="main-container">
             <div class="container center-div">
                 <center>
-                    Jimmy Yeung's Software Portfolio is...
                     <br>
-                
-                    <h1>Under Construction</h1>
                     <br>I will be updating the survey website. Here are my projects:</center>
                 <br>My gitHub: <a href="https://github.com/JimmySYeung">https://github.com/JimmySYeung</a>
                 <br>
                 <br>My webform for my UI/UX class: <a href="CSC642DataSurveyForm.html" target="_blank">CSC 642 Data Survey Form</a>
                 <br>
                 <br>
-                <center><i>Thank you kindly for your patience.</i>
+                <center><i></i>
             </div>
         </div>
     </div>

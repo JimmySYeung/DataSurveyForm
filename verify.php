@@ -1,5 +1,4 @@
 <html>
-<title>Filled information</title>
     <head>
 
         <title>Filled information</title>
@@ -8,7 +7,13 @@
         <meta content="utf-8" http-equiv="encoding">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+        <!-- Custom Stylesheet -->
+        <link href="stylesheet.css" rel="stylesheet" type="text/css">
 
     </head>
 <body>  
@@ -17,16 +22,16 @@
 <div class="container center-div">
     <div class="container jumbotron jumbotron-fluid" id="main-container">
         <div class="container center-div">
-	<h2>Hello <?php echo $_POST["firstName"]; ?>,</h2><h3> here is the information you have entered: </h3><br>
+	<h2>Hello <?php echo $_GET["firstName"]; ?>,</h2><h3> here is the information you have entered: </h3><br>
 	<div class="row">
 		<div class="col-md-5">
-	<div class="row"><b>Full Name:</b> <?php echo $_POST["firstName"]; ?> <?php echo $_POST["lastName"]; ?></div><br>
-	<div class="row"><b>Address:</b> <?php echo $_POST["address"]; ?></div><br>
-	<div class="row"><b>Education Status:</b> <?php echo $_POST["education"]; ?></div><br>
-	<div class="row"><b>Monthly budget:</b> <?php echo $_POST["income"]; ?></div><br>
-    <div class="row"><b>Height:</b> <?php echo $_POST["feet"]; ?> ft, <?php echo $_POST["inches"]; in.?></div><br>
-	<div class="row"><b>Phone:</b> <?php echo $_POST["phone"]; ?></div><br>
-	<div class="row"><b>E-mail:</b> <?php echo $_POST["email"]; ?></div><br>
+	<div class="row"><b>Full Name:</b> <?php echo $_GET["firstName"]; ?> <?php echo $_GET["lastName"]; ?></div><br>
+	<div class="row"><b>Address:</b> <?php echo $_GET["address"]; ?></div><br>
+	<div class="row"><b>Education Status:</b> <?php echo $_GET["education"]; ?></div><br>
+	<div class="row"><b>Monthly budget:</b> <?php echo $_GET["income"]; ?></div><br>
+    <div class="row"><b>Height:</b> <?php echo $_GET["feet"]; ?> ft, <?php echo $_GET["inches"]; in.?></div><br>
+	<div class="row"><b>Phone:</b> <?php echo $_GET["phone"]; ?></div><br>
+	<div class="row"><b>E-mail:</b> <?php echo $_GET["email"]; ?></div><br>
 
 <div id="gmap_canvas">Loading map...</div>
 		</div>
@@ -85,10 +90,10 @@ function geocode($address){
 ?>
 </body>
 <?php
-if($_POST){
+if($_GET){
  
     // get latitude, longitude and formatted address
-    $data_arr = geocode($_POST['address']);
+    $data_arr = geocode($_GET['address']);
  
     // if able to geocode the address
     if($data_arr){

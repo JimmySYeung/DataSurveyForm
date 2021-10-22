@@ -14,7 +14,11 @@ body {
     width: 250px;
 }
 
-
+.jumbotron {
+    background: white;
+    max-width: 750px;
+    border: 9px solid gray;
+}
 
 .center-div {
     margin: 0 auto;

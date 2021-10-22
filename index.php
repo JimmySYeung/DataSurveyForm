@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -27,7 +28,6 @@
     <center>
         <h2>CSC 642 Fall 2021 Individual Assignment Jimmy Yeung</h2>
         <h1>Data Survey Form</h1>
-        <br> Welcome to Data Survey Form. This project is intended for demonstration purposes only.
         <br> Please fill out your information below:</center>
     <br>
     <div class="container center-div">
@@ -111,7 +111,7 @@
                                     <input type="text" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" required>
                                     <p class="form-text text-muted">
                                         <h5>
-                                        Your phone number must contain 10 digits.
+                                        Your phone number requires 10 digits.
                                       </h5>
                                     </p>
                                 </div>
@@ -160,7 +160,7 @@
     <br>
     <br>
     <script type="text/javascript">
-    // (Field validations: first  and last name up to 40 characters; phone - 7 positive digits;, address – each entry up to 40 alpha numeric characters; Zip code- positive 5 digit number). 
+    // (Field validations: first  and last name up to 40 characters; phone - 10 positive digits;, address – each entry up to 40 alpha numeric characters; Zip code- positive 5 digit number). 
     $(document).ready(function() {
         $('#surveyForm').bootstrapValidator({
             feedbackIcons: {
@@ -175,7 +175,7 @@
                             max: 40
                         },
                         notEmpty: {
-                            message: 'Please type your first name.'
+                            message: 'Type your first name.'
                         }
 
                     }
@@ -186,7 +186,7 @@
                             max: 40
                         },
                         notEmpty: {
-                            message: 'Please type your last name.'
+                            message: 'Type your last name.'
                         }
                     }
                 },
@@ -196,21 +196,21 @@
                             max: 200
                         },
                         notEmpty: {
-                            message: 'Please type your address.'
+                            message: 'Type your address.'
                         }
                     }
                 },
                 education: {
                     validators: {
                         notEmpty: {
-                            message: 'Please select your educational level.'
+                            message: 'Select your educational level.'
                         }
                     }
                 },
                 income: {
                     validators: {
                         notEmpty: {
-                            message: 'Please select your income.'
+                            message: 'Select your income.'
                         }
                     }
                 },
@@ -220,24 +220,24 @@
                             message: 'This field should contain a number.'
                         },
                         notEmpty: {
-                            message: 'Please type your phone number.'
+                            message: 'Type your phone number.'
                         }
                     }
                 },
                 email: {
                     validators: {
                         notEmpty: {
-                            message: 'Please type your E-mail.'
+                            message: 'Type your E-mail.'
                         },
                         emailAddress: {
-                            message: 'Please enter a valid email address.'
+                            message: 'Enter a valid email address.'
                         }
                     }
                 },
                 terms: {
                     validators: {
                         notEmpty: {
-                            message: 'Please agree to the terms and conditions.'
+                            message: 'Agree to the terms and conditions.'
                         }
                     }
                 },

@@ -34,8 +34,7 @@
         <div class="container jumbotron jumbotron-fluid" id="main-container">
             <div class="container center-div">
                 <div class="col-lg-12">
-                    <?php require_once 'verify.php' ?>
-                    <form id="surveyForm" method="GET" data-toggle="validator">
+                    <form id="surveyForm" action="verify.php" method="POST" data-toggle="validator">
                         <div class="row">
                             <div class="wrapper">
                                 <div class="form-group col-md-5 has-feedback">

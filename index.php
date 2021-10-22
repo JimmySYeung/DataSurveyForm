@@ -23,7 +23,7 @@
         <div class="container jumbotron jumbotron-fluid" id="main-container">
             <div class="container center-div">
                 <center>
-                    <br>
+                    <br> I am learning how server works.
                     <br>I will be updating the survey website. Here are my projects:</center>
                 <br>My gitHub: <a href="https://github.com/JimmySYeung">https://github.com/JimmySYeung</a>
                 <br>

@@ -1,25 +1,23 @@
-<!DOCTYPE HTML>  
 <html>
-<head>
+    <head>
 
-    <title>Verification
-    </title>
-    <!-- Bootstrap -->
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
-    <meta content="utf-8" http-equiv="encoding">
+        <title>Filled information</title>
+        <!-- Bootstrap -->
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-    <!-- Custom Stylesheet -->
-    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+        <!-- Custom Stylesheet -->
+        <link href="stylesheet.css" rel="stylesheet" type="text/css">
 
-</head>
+    </head>
 <body>  
-	<center><h1>Verification Page</h1></center>
+	<center><h1>Filled Information Page</h1></center>
 	<br>
 <div class="container center-div">
     <div class="container jumbotron jumbotron-fluid" id="main-container">
@@ -107,8 +105,6 @@ if($_POST){
     ?>
  
     <!-- google map will be shown here -->
-    <!-- <div id="gmap_canvas">Loading map...</div>
-    <div id='map-label'>Map shows approximate location.</div> -->
  
     <!-- JavaScript to show google map -->
     <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCq07b_Vr7f_XiOLd2aev-rq33E_2i2ItI"></script>  

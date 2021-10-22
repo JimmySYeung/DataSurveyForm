@@ -1,5 +1,4 @@
-<!DOCTYPE HTML>  
-<html>
+ <html>
 <head>
 
     <title>Verification

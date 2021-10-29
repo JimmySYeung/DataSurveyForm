@@ -20,12 +20,13 @@
 <body>
     <center>
         <h1>Results verification page Jimmy Yeung</h1>
+        <br> Welcome to verified form. This project is intended for demonstration purposes only.
+        <br> Here were the submitted informations:
     </center>
     <br>
     <div class="container center-div">
         <div class="container jumbotron jumbotron-fluid" id="main-container">
             <div class="container center-div">
-                <h2>Hello <?php echo $_POST["firstName"]; ?>,</h2>
                 <div class="row">
                     <div class="col-md-5">
                         <div class="row"><b>Full Name:</b> <?php echo $_POST["firstName"]; ?> <?php echo $_POST["lastName"]; ?></div><br>

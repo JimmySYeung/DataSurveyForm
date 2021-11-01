@@ -47,6 +47,8 @@
 
         <script>
             //source: https://developers.google.com/maps/documentation/javascript/examples/geocoding-simple
+            //source: https://github.com/zipingH/csc642-forms/blob/master/csc642_forms/results.php
+            // I thank free copyright license from him. 
             //function to generate and display google map
             function initMap() {
                 var myLatLng = {

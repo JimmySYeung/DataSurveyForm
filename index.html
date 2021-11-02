@@ -4,9 +4,10 @@
 <head>
     <title>CSC 642 Fall 2021 Individual Assignment Jimmy Yeung</title>
     <title>Data survey form</title>
-    <!-- Bootstrap -->
+    <!-- meta codes determine the survey align as default. -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- I am using bootstrap 3.3.7 version.-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -16,11 +17,11 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js">
     </script>
-    <!-- Google Recaptcha -->
+    <!-- I had to create google platform to get google recaptcha working. -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-    <!-- Google Maps API -->
+    <!-- Google Maps APIs are free. -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <!-- Custom Stylesheet -->
     <link href="stylesheet.css" rel="stylesheet">
@@ -35,6 +36,7 @@
         <br> Please fill out your information below:
     </center>
     <br>
+    <!--The front page will need the user's input.-->
     <div class="container center-div">
         <div class="container jumbotron jumbotron-fluid" id="main-container">
             <div class="container center-div">
@@ -59,7 +61,7 @@
                         </div>
 
                         <br>
-                        <!--Form group by address, city, state, and zip -->
+                        <!--The street address will determine the living location.-->
                         <div class="row">
                             <div class="wrapper">
                                 <div class="form-group col-md-10 has-feedback">
@@ -80,7 +82,7 @@
                                 </div>
                             </div>
 
-                            
+                                <!--I only made state only for United States.-->
                                 <div class="wrapper">
                                     <div class="form-group col-md-5 has-feedback">
                                         <label for="selectState">State *</label>
@@ -141,8 +143,6 @@
                                     </div>
                                 </div>
                             </div>
-                       
-
                         <div class="row">
                             <div class="wrapper">
                                 <div class="form-group col-md-5 mb-3">
@@ -153,6 +153,7 @@
                             </div>
                         </div>
                         <br>
+                        <!-- Personal attribute can be express by input on website.-->
                         <div class="row">
                             <div class="wrapper">
                                 <div class="form-group col-md-5">
@@ -184,7 +185,7 @@
                             </div>
                         </div>
                         <br>
-
+                        <!-- Heights needs feet input and inches input from user.-->
                         <p class="birthday">Height</p>
                         <div class="row">
                             <div class="form-row">
@@ -199,6 +200,7 @@
                             </div>
                         </div>
                         <br>
+                        <!--Contact was a title for personal communication reaching.-->
                         <p class="birthday">Contacts</p>
                         <div class="row">
                             <div class="wrapper">
@@ -243,10 +245,13 @@
                         </div>
                         <br>
                         <br>
+                        <!-- The submit and restart buttons manipulate the survey form.-->
                         <div class="row">
                             <div class="wrapper">
                                 <div class="form-group col-md-5">
+                                <!--The submit button changes from current page to new page.-->    
                                 <button type="submit" class="btn btn-warning">SUBMIT</button>
+                                <!--The restart button removes all the input from the users.-->
                                 <button type="reset" class="btn btn-default">RESTART</button>
                             </div>
                         </div>
@@ -262,7 +267,7 @@
     <br>
     <br>
     <script type="text/javascript">
-        // (Field validations: first  and last name up to 40 characters; phone - 10 positive digits;, address – each entry up to 40 alpha numeric characters; Zip code- positive 5 digit number). 
+        // The field validations had limits based on typing and checked incorrect input by showing message.
         $(document).ready(function () {
             $('#surveyForm').bootstrapValidator({
                 feedbackIcons: {
@@ -321,7 +326,7 @@
                     zip: {
                         validators: {
                             numeric: {
-                                message: 'This field should contain a number.'
+                                message: 'This field requies a number.'
                             },
                             notEmpty: {
                                 message: 'Use your keyboard to type your zip.'
@@ -345,7 +350,7 @@
                     feet: {
                         validators: {
                             numeric: {
-                                message: 'This field should contain a number.'
+                                message: 'This field requires a number.'
                             },
                             notEmpty: {
                                 message: 'Type your feet.'
@@ -355,17 +360,17 @@
                     inches: {
                         validators: {
                             numeric: {
-                                message: 'This field should contain a number.'
+                                message: 'This field requires a number.'
                             },
                             notEmpty: {
-                                message: 'Use your keyboard to type your inches.'
+                                message: 'Type your inches.'
                             }
                         }
                     },
                     phone: {
                         validators: {
                             numeric: {
-                                message: 'This field should contain a number.'
+                                message: 'This field requires a number.'
                             },
                             notEmpty: {
                                 message: 'Use your keyboard to type your phone number.'
@@ -385,7 +390,7 @@
                     terms: {
                         validators: {
                             notEmpty: {
-                                message: 'Please agree to the terms and conditions.'
+                                message: 'Requires agreement to the terms and conditions.'
                             }
                         }
                     },

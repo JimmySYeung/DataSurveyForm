@@ -20,7 +20,7 @@
 <body>
     <center>
         <h1>Results verification page Jimmy Yeung</h1>
-        <br> Welcome to verified form. This project is intended for demonstration purposes only.
+        <br> Welcome to verified form. This assignment was done for human-computer interaction purposes only.
         <br> Here were the submitted informations:
     </center>
     <br>
@@ -48,7 +48,7 @@
         <script>
             //source: https://developers.google.com/maps/documentation/javascript/examples/geocoding-simple
             //source: https://github.com/zipingH/csc642-forms/blob/master/csc642_forms/results.php
-            // I thank free copyright license from him. 
+            // He has free copyright license, so I decide to reference his codes to. 
             //function to generate and display google map
             function initMap() {
                 var myLatLng = {

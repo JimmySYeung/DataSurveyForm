@@ -1,5 +1,5 @@
 # DataSurveyForm
 I am learning how to make an online data survey with human-interaction concepts like align pattern, not distracting, readable, and easy to use.
 I had use all the free sources to build the data survey form; the free sources were google cloud platform's free subscription and awardspace.net.
-Another reference was https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form, https://www.aspsnippets.com/questions/194703/Bootstrap-validation-for-Registration-Form-using-jQuery-BootstrapValidator-plugin-in-ASPNet-MVC/, and https://github.com/zipingH/csc642-forms/blob/master/csc642_forms/results.php, since the people had free copy-right license. I modified codes a lot so they would look very different.
+Another reference was https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form, https://www.aspsnippets.com/questions/194703/Bootstrap-validation-for-Registration-Form-using-jQuery-BootstrapValidator-plugin-in-ASPNet-MVC/, and https://github.com/zipingH/csc642-forms/blob/master/csc642_forms/results.php, since the people had free copy-right licenses. I modified codes a lot so they would look very different.
 Here is my data survey form: [http://jimmysyeung.atwebpages.com](http:jimmysyeung.atwebpages.com).

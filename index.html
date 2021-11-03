@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Bootstrap Validator -->
+    <!-- Bootstrap Validator is a bootstrap used to check the validity or syntactical correctness of a fragment of code or document. -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css" />
     <script type="text/javascript"
@@ -19,11 +19,11 @@
     </script>
     <!-- I had to create google platform to get google recaptcha working. -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <!-- Google Fonts -->
+    <!-- Google Fonts helps to change font style. -->
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
     <!-- Google Maps APIs are free. -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <!-- Custom Stylesheet -->
+    <!-- Custom Stylesheet helps to edit the background color, page, words, and ridges easily.-->
     <link href="stylesheet.css" rel="stylesheet">
 </head>
 
@@ -42,6 +42,8 @@
             <div class="container center-div">
                 <div class="col-lg-12">
                     <form id="surveyForm" action="verify.php" method="post" data-toggle="validator">
+                        <!--Full name-->
+                        <p class="birthday">Identity</p>
                         <div class="row">
                             <div class="wrapper">
                                 <div class="form-group col-md-5 has-feedback">
@@ -62,6 +64,7 @@
 
                         <br>
                         <!--The street address will determine the living location.-->
+                        <p class="birthday">Living Location</p>
                         <div class="row">
                             <div class="wrapper">
                                 <div class="form-group col-md-10 has-feedback">
@@ -153,7 +156,8 @@
                             </div>
                         </div>
                         <br>
-                        <!-- Personal attribute can be express by input on website.-->
+                        <!-- Job can be express by input on website.-->
+                        <p class="birthday">Job</p>
                         <div class="row">
                             <div class="wrapper">
                                 <div class="form-group col-md-5">
@@ -168,12 +172,9 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
-                        <br>
-                        <div class="row">
                             <div class="wrapper">
                                 <div class="form-group col-md-5">
-                                    <label for="income">Month Budget for Service *</label>
+                                    <label for="income">Month Budget for Service*</label>
                                     <select name="income" id="income" class="form-control">
                                         <option value="">Select a Budget</option>
                                         <option>
@@ -183,6 +184,10 @@
                                     </select>
                                 </div>
                             </div>
+                        </div>
+                        <br>
+                        <div class="row">
+
                         </div>
                         <br>
                         <!-- Heights needs feet input and inches input from user.-->

@@ -198,12 +198,12 @@
                         <div class="row">
                             <div class="form-row">
                                 <div class="form-group col-md-2">
-                                    <label for="feet">Feet *</label>
+                                    <label for="feet">Feet</label>
                                     <input placeholder="0" type="text" class="form-control" name="feet" id="feet" maxlength="1"
                                         >
                                 </div>
                                 <div class="form-group col-md-3">
-                                    <label for="inches">Inches *</label>
+                                    <label for="inches">Inches</label>
                                     <input placeholder="00" type="text" class="form-control" name="inches" id="inches" maxlength="2"
                                         >
                                 </div>
@@ -223,9 +223,9 @@
                         <div class="row">
                             <div class="wrapper">
                                 <div class="form-group col-md-5">
-                                    <label for="phone">Phone *</label>
+                                    <label for="phone">Phone</label>
                                     <input placeholder="0000000000" type="text" class="form-control" id="phone" name="phone" pattern="[0-9]{10}"
-                                        maxlength="10" required>
+                                        maxlength="10">
                                     <p class="form-text text-muted">
                                         <h5>
                                             Your phone number must contain 10 digits.
@@ -390,9 +390,6 @@
                         validators: {
                             numeric: {
                                 message: 'This field requires a number.'
-                            },
-                            notEmpty: {
-                                message: 'Use your keyboard to type your phone number.'
                             }
                         }
                     },

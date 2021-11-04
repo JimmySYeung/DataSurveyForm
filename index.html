@@ -37,6 +37,7 @@
         <br> Please fill out your information below:
     </center>
     <br>
+    <!--My reference was https://stackoverflow.com/questions/18296267/form-validation-with-bootstrap-jquery and access date was 11/4/21-->
     <!--The front page will need the user's input.-->
     <div class="container center-div">
         <div class="container jumbotron jumbotron-fluid" id="main-container">
@@ -211,7 +212,7 @@
                         <!--Contact was a title for personal communication reaching.-->
                         <p class="birthday">Contacts</p>
                         <p class="servicerequire">Check all services you require:</p>
-                        <!--My reference is https://stackoverflow.com/questions/22753682/print-checked-checkbox-value-from-form-in-php-->
+                        <!--My reference was https://stackoverflow.com/questions/22753682/print-checked-checkbox-value-from-form-in-php; access date was 11/3/21-->
                         <input class="form-check-input" type='checkbox' name='checkboxService[]' value='email'> Email<br>
                         <input class="form-check-input" type='checkbox' name='checkboxService[]' value='phone'> Phone<br>
                         <input class="form-check-input" type='checkbox' name='checkboxService[]' value='facebook'> Facebook<br>
@@ -284,6 +285,7 @@
     <br>
     <script type="text/javascript">
         // The field validations had limits based on typing and checked incorrect input by showing message.
+        
         $(document).ready(function () {
             $('#surveyForm').bootstrapValidator({
                 feedbackIcons: {

@@ -57,8 +57,8 @@
     </div>
 
     <script>
-        //source: https://developers.google.com/maps/documentation/javascript/examples/geocoding-simple
-        //source: https://github.com/zipingH/csc642-forms/blob/master/csc642_forms/results.php
+        //source: https://developers.google.com/maps/documentation/javascript/examples/geocoding-simple, and access date was 10/31/21
+        //source: https://github.com/zipingH/csc642-forms/blob/master/csc642_forms/results.php, and access date was 10/31/21
         // He has free copyright license, so I decide to reference his codes to. 
         // The whole script here displays map on my verified page.
         function initMap() {

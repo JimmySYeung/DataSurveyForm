@@ -48,7 +48,6 @@
                                                             $myArray = array();
                                                             if ($_POST['checkboxService'] != '') {
                                                                 foreach ($_POST['checkboxService'] as $value) {
-                                                                    
                                                                     $myArray[] = $value;
                                                                 }
 

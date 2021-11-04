@@ -361,8 +361,8 @@
                     },
                     income: {
                         validators: {
-                            notEmpty: {
-                                message: 'Pick your income.'
+                            string: {
+                                message: 'This field requires a string.'
                             }
                         }
                     },
@@ -370,9 +370,6 @@
                         validators: {
                             numeric: {
                                 message: 'This field requires a number.'
-                            },
-                            notEmpty: {
-                                message: 'Type your feet.'
                             }
                         }
                     },
@@ -380,9 +377,6 @@
                         validators: {
                             numeric: {
                                 message: 'This field requires a number.'
-                            },
-                            notEmpty: {
-                                message: 'Type your inches.'
                             }
                         }
                     },

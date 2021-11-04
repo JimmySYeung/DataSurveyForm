@@ -62,6 +62,7 @@
         // He has free copyright license, so I decide to reference his codes to. 
         // The whole script here displays map on my verified page.
         function initMap() {
+            // myLatLng was used for zooming and centering the location of choosen address.
             var myLatLng = {
                 lat: 37.77493,
                 lng: -82.41942
@@ -106,7 +107,8 @@
         }
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
-    <!-- I am using google map key to show the google map on screen.-->
+    <!-- I am using google map key to show the google map on screen; you will need free google platform to access the google map api key.-->
+    <!--I had not used the free premium subscription.-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCltIFdR4Oi-XcoM9p3BMcqdLBN1mAbMcU&callback=initMap">
     </script>
 </body>

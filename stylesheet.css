@@ -6,8 +6,8 @@ body {
 }
 
 #map {
-    height: 36rem;
-    width: 20rem;
+    height: 40%;
+    width: 100%;
 }
 
 #gmap_canvas {

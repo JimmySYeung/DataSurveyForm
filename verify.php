@@ -28,19 +28,33 @@
     <div class="container center-div">
         <div class="container jumbotron jumbotron-fluid" id="main-container">
             <div class="container center-div">
-                <div class="row">
-                    <div class="col-md-5">
+                <div class="row-md-15">
+                    <div class="col-md-15">
                         <!-- The output will display personal information. -->
                         <div class="row"><b>Full Name:</b> <?php echo $_POST["firstName"]; ?> <?php echo $_POST["lastName"]; ?></div><br>
                         <div class="row"><b>Address:</b> <?php echo $_POST["street"]; ?>, <?php echo $_POST["city"]; ?>, <?php echo $_POST["state"]; ?> <?php echo $_POST["zip"]; ?></div><br>
                         <div class="row"><b>Title:</b> <?php echo $_POST["title"]; ?></div><br>
-                        <div class="row"><b>Monthly budget:</b> <?php echo $_POST["income"]; ?></div><br>
+                        <div class="row"><b>Monthly budget:</b> <?php 
+                        if($_POST["income"] != '') {
+                            echo $_POST["income"]; 
+                        } else {
+                            echo 'empty';
+                        }
+                        
+                        ?></div><br>
                         <div class="row"><b>Height:</b> <?php echo $_POST["feet"]; ?> ft, <?php echo $_POST["inches"]; ?> in</div><br>
+                        <!--My reference was https://stackoverflow.com/questions/19935405/removing-last-comma-from-a-foreach-loop, and access date was 11/4/21-->
                         <div class="row"><b>Services:</b> <?php
+                                                            $myArray = array();
                                                             if ($_POST['checkboxService'] != '') {
                                                                 foreach ($_POST['checkboxService'] as $value) {
-                                                                    echo $value . '<br>';
+                                                                    
+                                                                    $myArray[] = $value;
                                                                 }
+
+                                                                echo implode( ', ', $myArray);
+                                                            } else {
+                                                                echo 'empty';
                                                             }
                                                             ?>
                         </div><br>
@@ -48,9 +62,9 @@
                         <div class="row"><b>E-mail:</b> <?php echo $_POST["email"]; ?></div><br>
                     </div>
                     <!-- The map displays the right side of user's input values.-->
-                    <div id="map"></div>
+                    <div class="col-md-5" id="map"></div>
                 </div>
-
+                
             </div>
 
         </div>

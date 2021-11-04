@@ -286,7 +286,7 @@
     <br>
     <script type="text/javascript">
         // The field validations had limits based on typing and checked incorrect input by showing message.
-        
+        // Error handling begins here too.
         $(document).ready(function () {
             $('#surveyForm').bootstrapValidator({
                 feedbackIcons: {
@@ -361,9 +361,6 @@
                     },
                     income: {
                         validators: {
-                            notEmpty: {
-                                message: 'Pick your income.'
-                            }
                         }
                     },
                     feet: {
